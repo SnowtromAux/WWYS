@@ -1,0 +1,94 @@
+#wrapper{
+    display: flex;
+}
+
+#left{
+    position: relative;
+    width: 600px;
+    height: 450px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.reel{
+    display: flex;
+    background-color: skyblue;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+#spin{
+    position: absolute;
+    bottom: 70px;
+    width: 75px;
+    height: 50px;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#win{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#balance{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#bet{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#balance , #bet , #win{
+    font-size: 25px;
+}
+
+#respin{
+    display: none;
+    position: absolute;
+    bottom: 85px;
+    font-size: 20px;
+    left: calc(50% + 110px);
+    transform: translateX(-50%);
+    color: green
+}
+
+
+#right{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 10px;
+}
+
+#right >div >label{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#right >div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#series >div , #hm >div{
+    display: flex;
+    flex-direction: column;
+}
+
+#games-left{
+    display: none;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win What You See</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id = "wrapper">
+        <div id = "left">
+            <div class = "reel">G</div>
+            <div class = "reel">G</div>
+            <div class = "reel">G</div>
+
+            <button id = "spin" onclick = "Spin('player')">Spin</button>
+            <div id = "win">Win: </div>
+            <div id = "balance"></div>
+            <div id = "bet"></div>
+            <div id = "respin"></div>
+        </div>
+    
+        <div id = "right">
+            <div id = "autoplay">
+                <label>Autoplay</label>
+                <div>
+                    <label>Games</label>
+                    <input type = "number" id = "bot-games"></input>
+                </div>
+    
+                <div>
+                    <label>Speed (games / sec)</label>
+                    <input type = "number" id = "bot-speed"></input>
+                </div>
+
+                <button id = "auto-btn" onclick = "triggerAuto()">Start Auto</button>
+                <div>
+                    <label id = "games-left">Games Left: 0</label>
+                </div>
+            </div>
+
+            <div id = "series">
+                <label>Series</label>
+                <div>
+                    <label id = "s_games">Games Played: 0</label>
+                    <label id = "s_tb">Total Bet: 0</label>
+                    <label id = "s_tw">Total Win: 0</label>
+                    <label id = "s_bonus_games">Bonus Games: 0</label>
+                    <label id = "s_rtp">RTP: 0 %</label>
+                    <label id = "s_bonuses">Bonus Games RTP: 0</label>
+                    <label id = "s_no_bonuses">No Bonus Games RTP: 0</label>
+                    <label id = "s_frequency">Bonus Games Frequency: 0</label>
+                    <label id = "s_empty">Empty Games: 0</label>
+                </div>
+            </div>
+
+            <div id = "hm">
+                <label>Hard Meters</label>
+                <div>
+                    <label id = "hm_games">Games Played: 0</label>
+                    <label id = "hm_tb">Total Bet: 0</label>
+                    <label id = "hm_tw">Total Win: 0</label>
+                    <label id = "hm_bonus_games">Bonus Games: 0</label>
+                    <label id = "hm_rtp">RTP: 0 %</label>
+                    <label id = "hm_bonuses">Bonus Games RTP: 0 %</label>
+                    <label id = "hm_no_bonuses">No Bonus Games RTP: 0 %</label>
+                    <label id = "hm_frequency">Bonus Games Frequency: 0 %</label>
+                    <label id = "hm_empty">Empty Games: 0 %</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src = "common/configuration.js"></script>
+    <script src = "common/functions.js"></script>
+    <script src = "common/events.js"></script>
+    
+    
+    <script src = "objects/Bot.js"></script>
+
+    <script src = "objects/HardMeters.js"></script>
+    <script src = "objects/Series.js"></script>
+
+    <script src = "objects/Reel.js"></script>
+    <script src = "objects/Player.js"></script>
+
+    <script src = "game.js"></script>
+</body>
+</html>
