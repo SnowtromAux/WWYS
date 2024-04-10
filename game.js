@@ -54,7 +54,7 @@ function Spin(spinner){
 
         for(const reel of reels){
             if(reel.output == 'G')gifts_num++;
-            if(reel.output == 'B')blank_num++;
+            if(reel.output == '-')blank_num++;
             if(reel.output == '0' || reel.output == '00')zero_num++;
         }
 
@@ -88,7 +88,7 @@ function Spin(spinner){
             
             for(const reel of reels){
                 if(reel.output == 'G')gifts_num++;
-                if(reel.output == 'B')blank_num++;
+                if(reel.output == '-')blank_num++;
                 if(reel.output == '0' || reel.output == '00')zero_num++;
             }
 
@@ -104,7 +104,7 @@ function Spin(spinner){
         
             for(const reel of reels){
                 if(reel.output == 'G')gifts_num++;
-                if(reel.output == 'B')blank_num++;
+                if(reel.output == '-')blank_num++;
                 if(reel.output == '0' || reel.output == '00')zero_num++;
             }
 
@@ -142,7 +142,7 @@ function CalculateWin(){
         output_str = `${JACKPOT}`;
     }else{
         for(const reel of reels){
-            if(reel.output == "B" || reel.output == "G")
+            if(reel.output == "-" || reel.output == "G")
                 output_str += "";
             else
                 output_str += reel.output;
