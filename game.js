@@ -169,8 +169,6 @@ function CalculateWin(){
         }
         hm.eg++;
         hm.update();
-        console.log(hm.eg)
-
     }
 
     if(autoplay){
